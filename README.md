@@ -3,7 +3,9 @@ Docsify Server
 
 ## Getting Started
 
-After clonging this repo, build the image by running:
+After cloning this repo, create a `README.md` file in the `/docs` folder. This will be your site's entrypoint/home-page.
+
+Then build your docsify docker image by running:
 
 ```bash
 docker-compose build
@@ -15,8 +17,16 @@ docker-compose build
 docker-compose up
 ```
 
-You should now be able to see the docsify site by going to the IP address or hostname of the server in your browser.
+You should now be able to see the a docsify site showing your README.md file, by going to the IP address or hostname of
+the server in your browser.
 
-### Notes To Self
-* Need to figure out how to get static pages shoiwing in the sidebar.
-    * https://github.com/docsifyjs/docsify/issues/1083
+
+## Customizations
+Be sure to read the [docsify docs](https://docsify.js.org/#/?id=docsifyS) to see how you can customize your site, such as by:
+
+* choosing a different theme.
+* adding syntax highlighting for more languages
+* enable the navbar.
+* customize the sidebar
+* adding plugins.
+* setting a cover page.
