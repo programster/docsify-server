@@ -1,2 +1,2 @@
-# docsify-server
-A project to make it easey to deploy Docsify through Docker.
+Manually set sidebar items
+# https://github.com/docsifyjs/docsify/issues/1083
