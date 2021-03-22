@@ -9,7 +9,10 @@ RUN useradd \
 RUN apt-get update && apt-get dist-upgrade -y
 
 # Install cron to act as our foreground process
-RUN apt-get install -y cron
+RUN apt-get install -y supervisor
+
+# Add our supervisor config to the container
+ADD supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
 # Install node
 RUN apt-get install curl -y \
