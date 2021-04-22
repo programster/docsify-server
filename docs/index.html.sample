@@ -22,8 +22,9 @@
     window.$docsify = {
       name: '',
       repo: '',
-      loadNavbar: true
-      //loadSidebar: true
+      loadNavbar: true,
+      loadSidebar: true,
+      subMaxLevel: 3
     }
     </script>
 
@@ -33,5 +34,7 @@
     <!-- include php and bash syntax highlighting -->
     <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-php.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-json.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-python.min.js"></script>
 </body>
 </html>
