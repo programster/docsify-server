@@ -30,6 +30,7 @@ EXPOSE 80
 # Use docsify user's home directory as our working area
 WORKDIR /home/docsify
 
+COPY docs .
 # Add script for fixing permission mapping
 ADD permission-fix.sh /root/permission-fix.sh
 
